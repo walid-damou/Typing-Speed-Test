@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dactylographie</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="body">
+    <header>Dactylographie</header>
+    <main class="main">
+        <div id="para"></div>
+        <textarea id="input" onkeypress="chronoStart()" onkeyup="color()"placeholder="The clock starts when you start typing" ></textarea>
+    </main>
+    <article style="width: 100%;">
+        <nav class="le1">Il s'agit d'un test de dactylographie.
+            Votre objectif est de dupliquer le texte tourni,EXACTEMENT,dans le champ cidessous.
+            Le minuteur démarre lorsque vous commencez à taper et ne s'arréte que 
+            lorsque vous  faites correspondre exactement ce texte.<br /> Bonne chance !
+        </nav>
+        <nav class="le2">
+            <p id="chrono">00:00:00<br/></p>
+            <button class="le2but" id="reset" onclick="chronoReset()" onmouseover="col('orangered') " onmouseout="nor('white')"><b> Refaire le test </b></button>
+        </nav>
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>
